@@ -9,6 +9,6 @@ public class NineState : ISevenSegmentDisplayState
     }
 
     public ISevenSegmentDisplayState NextState() {
-        return new ZeroState();
+        return ZeroState.GetState();
     }
 }

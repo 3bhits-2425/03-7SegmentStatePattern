@@ -29,7 +29,7 @@ public class Manager : MonoBehaviour
         myDigit.ResetSegmentDisplay();
 
         //Initialize SegmentState
-        myDisplayState = new ZeroState();
+        myDisplayState = ZeroState.GetState();
     }
 
     private void Update() {

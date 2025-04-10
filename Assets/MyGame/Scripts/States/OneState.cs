@@ -5,7 +5,7 @@ public class OneState : ISevenSegmentDisplayState
     }
 
     public ISevenSegmentDisplayState PreviousState() {
-        return new ZeroState();
+        return ZeroState.GetState();
     }
 
     public ISevenSegmentDisplayState NextState() {
