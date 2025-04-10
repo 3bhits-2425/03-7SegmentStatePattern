@@ -19,10 +19,10 @@ public class ZeroState : ISevenSegmentDisplayState
     }
 
     public ISevenSegmentDisplayState PreviousState() {
-        return new NineState();
+        return NineState.GetState();
     }
 
     public ISevenSegmentDisplayState NextState() {
-        return new OneState();
+        return OneState.GetState();
     }
 }
